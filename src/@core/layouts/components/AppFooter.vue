@@ -1,10 +1,9 @@
 <template>
   <p class="clearfix mb-0">
     <span class="float-md-left d-none d-md-block d-md-inline-block mt-25">
-      Powered By
       <b-link
         class="ml-25 font-weight-bolder"
-        href="https://t.me/tarabukinivan"
+        href="https://t.me/aytapapina"
         target="_blank"
       >Report a bug</b-link>
     </span>
