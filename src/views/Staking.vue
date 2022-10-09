@@ -2,7 +2,7 @@
   <div>
     <b-card
       v-if="pingVals && pingVals.length > 0"
-      title="❤️ Helping Ping.pub By Staking ❤️"
+      title="By Staking ❤️"
       class="overflow-auto"
     >
       <b-table
@@ -76,17 +76,6 @@
             v-else
             class="text-danger"
           >{{ data.item.changes }}</small>
-        </template>
-        <template #cell(operation)="data">
-          <b-button
-            v-b-modal.operation-modal
-            :name="data.item.operator_address"
-            variant="primary"
-            size="sm"
-            @click="selectValidator(data.item.operator_address)"
-          >
-            Delegate
-          </b-button>
         </template>
       </b-table>
     </b-card>
@@ -185,17 +174,6 @@
               v-else
               class="text-danger"
             >{{ data.item.changes }}</small>
-          </template>
-          <template #cell(operation)="data">
-            <b-button
-              v-b-modal.operation-modal
-              :name="data.item.operator_address"
-              variant="primary"
-              size="sm"
-              @click="selectValidator(data.item.operator_address)"
-            >
-              Delegate
-            </b-button>
           </template>
         </b-table>
       </b-card-body>
