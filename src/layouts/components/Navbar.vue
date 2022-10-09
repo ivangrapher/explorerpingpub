@@ -80,7 +80,14 @@
         </b-media-body>
       </b-media>
     </div>
+
+    <!-- <dark-Toggler class="d-none d-lg-block" /> -->
     <!-- Right Col -->
+    <b-navbar-nav class="nav align-items-center ml-auto">
+      <dark-Toggler class="d-none d-lg-block" />
+      <search-bar />
+      <locale />
+    </b-navbar-nav>
   </div>
 </template>
 
@@ -96,7 +103,6 @@ import SearchBar from '@core/layouts/components/app-navbar/components/SearchBar.
 // import CartDropdown from '@core/layouts/components/app-navbar/components/CartDropdown.vue'
 import { getLocalAccounts, timeIn, toDay } from '@/libs/utils'
 // import UserDropdown from '@core/layouts/components/app-navbar/components/UserDropdown.vue'
-
 export default {
   components: {
     BLink,
@@ -109,7 +115,6 @@ export default {
     BDropdown,
     BDropdownItem,
     BDropdownDivider,
-
     // Navbar Components
     DarkToggler,
     Locale,
@@ -162,12 +167,10 @@ export default {
       accounts = Object.entries(accounts)
         .map(v => ({ wallet: v[0], address: v[1].address.find(x => x.chain === this.selected_chain.chain_name) }))
         .filter(v => v.address)
-
       // accounts > 0 and wallet not setted, pick the first one as default
       if (accounts.length > 0 && accounts.findIndex(x => x.wallet === this.walletName) < 0) {
         this.updateDefaultWallet(accounts[0].wallet)
       }
-
       if (accounts.findIndex(x => x.wallet === this.walletName) < 0 && this.walletName !== 'Wallet') {
         this.updateDefaultWallet(null)
       }
