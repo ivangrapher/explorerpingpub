@@ -1,6 +1,9 @@
 <template>
-  <svg width="191" height="191" viewBox="0 0 191 191" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="28.4395" y="21.8506" width="134.35" height="134.35" fill="#5BABCD"/>
-<rect x="95.6172" y="0.419922" width="134.35" height="134.35" transform="rotate(45 95.6172 0.419922)" fill="#5BABCD"/>
+<svg width="150" height="150" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#5BABCD" height="95" id="svg_1" width="95" x="28.4395" y="27.5"/>
+  <rect fill="#5BABCD" height="95" id="svg_2" transform="rotate(45 74.5 71.5)" width="95" x="27" y="24"/>
+ </g>
 </svg>
 </template>
