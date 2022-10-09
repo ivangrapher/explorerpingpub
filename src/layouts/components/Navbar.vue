@@ -86,7 +86,6 @@
     <b-navbar-nav class="nav align-items-center ml-auto">
       <dark-Toggler class="d-none d-lg-block" />
       <search-bar />
-      <locale />
     </b-navbar-nav>
   </div>
 </template>
